@@ -31,4 +31,5 @@ public class Track implements Playable {
         System.out.println("Playing Track: " + this.getTitle());
         System.out.println("Track length: " + this.getLength());
     }
+
 }
