@@ -1,0 +1,12 @@
+
+1. Lớp nào nên implement `Comparable`?**  
+   Lớp đại diện cho các mặt hàng trong giỏ hàng (ví dụ: MediaItem, DVD, v.v.) nên implement Comparable.
+
+2. Cách cài đặt compareTo() để phản ánh thứ tự muốn?**  
+   Cài đặt compareTo() so sánh các thuộc tính theo thứ tự mong muốn, ví dụ: so sánh theo title trước, rồi cost nếu title giống nhau.
+
+3. Có thể có hai quy tắc sắp xếp khác nhau không?**  
+   Comparable chỉ hỗ trợ một quy tắc sắp xếp tự nhiên. Để có nhiều quy tắc, phải sử dụng Comparator.
+
+4. Cách xử lý DVD có quy tắc sắp xếp riêng?
+   Override phương thức compareTo() trong lớp DVD để định nghĩa quy tắc sắp xếp riêng (theo title, length giảm, rồi cost).
